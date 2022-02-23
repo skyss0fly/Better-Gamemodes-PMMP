@@ -1,0 +1,29 @@
+name: Better Gamemodes
+main: skyss0fly\Better-Gamemodes-PMMP\Main
+version: 0.0.1
+api: - 4.2.1
+load: POSTWORLD
+author: skyss0fly
+description: an advanced Gamemode Plugin
+commands:
+  gmt:
+    description: Toggles gamemode to spectator
+    usage: /gmt
+    permission: Bettergamemodes.gmt
+permissions:
+  BetterGamemodes:
+    default: op
+    description: An advanced Gamemode Plugin
+    children:
+      BetterGamemodes.others:
+        description: Allows users to change others gamemode
+        default: false
+      BetterGamemodes.spectator:
+        description: Allows users to use spectator mode
+        default: false
+      BetterGamemodes.gmc:
+        description: Change your gamemode to creative
+        default: false
+      BetterGamemodes.gms:
+        description: Survival Mode
+        default: false
